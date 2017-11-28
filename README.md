@@ -1,5 +1,5 @@
 # VisibilityStats
-A simple library to determine if DOM element(s) are visible in the 
+A simple library to determine if DOM elements are visible in the 
 viewport and statistics about how long elements have been visible 
 / when they were last visible.
 

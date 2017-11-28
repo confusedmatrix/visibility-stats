@@ -1,6 +1,6 @@
 {
   "name": "visiblity-stats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Chris Briggs <confusedmatrix@gmail.com>",
   "description": "Library to determine if DOM elements are visible in the viewport",
   "main": "main.js",

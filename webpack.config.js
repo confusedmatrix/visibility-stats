@@ -19,7 +19,7 @@ module.exports = function(env) {
             libraryExport: 'default',
             libraryTarget: 'umd',
             path: __dirname,
-            filename: (env === 'prod') ? 'dist/visiblity-stats.min.js' : 'dist/visiblity-stats.js',
+            filename: (env === 'prod') ? 'dist/visibility-stats.min.js' : 'dist/visibility-stats.js',
             umdNamedDefine: true,
         },
         module: {
