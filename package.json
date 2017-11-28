@@ -1,0 +1,30 @@
+{
+  "name": "visiblity-stats",
+  "version": "0.0.1",
+  "author": "Chris Briggs <confusedmatrix@gmail.com>",
+  "description": "Library to determine if DOM elements are visible in the viewport",
+  "main": "main.js",
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:prod": "webpack --env=prod --progress --profile --colors",
+    "build:dev:watch": "webpack --env=dev --progress --profile --colors --watch",
+    "test": "mocha --require babel-polyfill --require babel-register --require test/setup.js --recursive=test/specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "jsdom": "^11.3.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2",
+    "webpack": "^3.8.1"
+  }
+}

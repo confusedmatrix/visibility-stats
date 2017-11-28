@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VisibilityStats example</title>
+    <style type="text/css">
+        section {
+            height: 20em;
+            line-height: 20em;
+            border: 1px solid #000000;
+            text-align: center;
+            margin: 1em 0;
+          }
+    </style>
+</head>
+<body>
+    <section id="section1">Section 1</section>
+    <section id="section2">Section 2</section>
+    <section id="section3">Section 3</section>
+    <section id="section4">Section 4</section>
+    <section id="section5">Section 5</section>
+
+    <script src="../dist/visibility-stats.js"></script>
+    <script>
+        // Track the visibility of all <section> tags 
+        var vs = new VisibilityStats('section')
+
+        // Show visibility stats every 5 seconds
+        setInterval(function() {
+            console.log(vs.getStats())
+        }, 5000)
+    </script>
+</body>
+</html>
